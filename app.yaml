@@ -1,0 +1,19 @@
+application: quickbooklook
+version: 3
+runtime: php
+api_version: 1
+
+handlers:
+- url: /css
+  static_dir: css
+- url: /fonts
+  static_dir: fonts
+- url: /img
+  static_dir: img
+- url: /js
+  static_dir: js
+- url: /less
+  static_dir: less
+
+- url: /.*
+  script: index.html

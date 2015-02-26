@@ -1,0 +1,150 @@
+.mystyle {
+
+	background-color: #1A202C;
+
+	padding-top: 2px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+.thumbnail {
+
+	height:150px;
+}
+::-webkit-scrollbar {  
+    width: 8px;
+}  
+::-webkit-scrollbar-track {  
+    background-color: #eaeaea;  
+    border-left: 1px solid #ccc;  
+        border-radius: 4px;
+
+}  
+::-webkit-scrollbar-thumb {  
+    background-color: #1A202C;  
+        border-radius: 4px;
+
+}  
+::-webkit-scrollbar-thumb:hover {  
+    background-color: #1A202C;  
+        border-radius: 4px;
+
+}  
+
+.estatus {
+
+	width:20px;
+	height:20px;
+}
+
+.lB {
+
+	background: url('../img/left.png') no-repeat;
+
+}
+.rB {
+
+	background: url('../img/right.png') no-repeat;
+}
+
+.rB, .lB {
+	outline-color: transparent;
+	border: none;
+	margin-top: 20px;
+	margin-left: 70px;
+	cursor:pointer;
+	background-size: contain;
+	height:30px;
+	width:30px;
+	
+}
+
+.lB:hover {
+	background-image: url('../img/leftFocus.png');
+}
+
+.rB:hover {
+	background-image: url('../img/rightFocus.png');
+}
+
+.description {
+	padding-right: 5px;
+	padding-top:5px;
+	padding-bottom: 5px;
+	max-height:150px;
+	overflow:auto;
+
+}
+
+.column {
+
+	margin-bottom:8px;
+	
+}
+
+.load {
+
+	width:30px;
+	height:30px;
+	margin-left: 5px;
+	display:none;
+
+}
+
+.delete {
+	outline-color: transparent;
+	border: none;
+
+	background: url('../img/delete.png') no-repeat;
+	cursor:pointer;
+	background-size: contain;
+	height:20px;
+	width:20px;
+	
+}
+
+.delete:hover {
+	
+	background-image: url('../img/deletehover.png');
+}
+
+@font-face {
+
+	font-family: 'subscript';
+	src:url("../fonts/subscript.ttf");
+}
+
+@font-face {
+
+	font-family: 'star';
+	src:url("../fonts/cookiemonster.ttf");
+}
+
+.stars {
+
+	font-family: 'star';
+	font-size: 2em;
+}
+
+@font-face {
+
+	font-family: 'mycustomfont';
+	src:url("../fonts/geeker.TTF");
+}
+
+.subscript {
+	font-family: 'subscript';
+	color: white;
+	font-size: 20px;
+}
+
+.myHeader {
+	font-size: 4em;
+	font-family: 'mycustomfont';
+	color: 		#D13F31;
+	font-style: bold;
+}
+
+.myFooter {
+
+	color:black;
+}

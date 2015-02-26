@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Books</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+	  google.load("search", "1");
+	</script>
+</head>
+
+<body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=1407999482755408";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column" id='formContainer'>
+			<div class="page-header mystyle">
+				<h1 class="myHeader">
+					Quick Book Look <span class="subscript">plain and simple</span>
+				</h1>
+			</div>
+			<div class="row clearfix" id="course1">
+				<div class="col-md-3 column">
+					<div role="form" >
+						<div class="form-group">
+							 <label for="courseName">Topic</label><input onKeyPress="return submitIt(event);" onFocus="hide();" type="text" class="form-control" id="courseName" >
+						</div>
+						<b id="warning" style="color:red;">Required</b>
+						<div class="checkbox">
+							 <label><input id="checkbox" type="checkbox"> Show latest books</label>
+						</div> <button type="button" onClick="bookSearch();" class="btn btn-success">Search</button>
+						<img class="load" src="img/load.GIF" />
+					</div>
+					<button class="lB" onClick="leftClicked();"></button>
+					<button class="rB" onClick="rightClicked();"></button>
+				</div>
+				<div class="col-md-9 column">
+					<div class="row clearfix" id="bookPreview"></div>
+				</div>
+			</div> 
+			
+			<hr>
+			<div class="row clearfix">
+		<div class="col-md-6 column">
+			<h2 class="subscript myFooter">
+				About the app
+			</h2>
+			<p>
+				A simple app that displays a list of available books for a given topic. Willing to add more features. Feel free to post issues and recommendations to <b><u>cr7lmessi10@gmail.com</u></b>. Thanks to Google books, Bootstrap and the maker ofcourse.
+			</p>
+			
+		</div>
+		<div class="col-md-6 column">
+			<h2 class='subscript myFooter'>
+				Help the app, the Way it's helping you
+			</h2>
+			<g:plusone class='g-plusone' count="true" href="www.quickbooklook.appspot.com"></g:plusone>
+			<div class="fb-like" data-href="https://www.facebook.com/quickbooklook" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div><br>
+			<div class="fb-share-button" data-href="http://www.quickbooklook.appspot.com" data-type="button_count"></div>
+			
+		</div>
+	</div>
+			
+
+			
+		</div>
+	</div>
+</div>
+<img class="preload" src="img/deletehover.png" /><img class="preload" src="img/leftFocus.png" /><img class="preload" src="img/rightFocus.png" />
+</body>
+</html>
